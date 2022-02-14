@@ -21,7 +21,7 @@
 
         body {
             overflow-x: hidden;
-            background-color: black;
+            background-color: #182335;
         }
         #submit{
             margin-left: 10%;
@@ -80,22 +80,22 @@
     </nav>
 
     <div id="emailheader">
-        <h3 style="color:white;">Send us an email with any questions you have!</h3>
-        <h5 style="color:white;">Check the FAQ!</h5>
+        <h3 style="color:#E15546;">Send us an email with any questions you have!</h3>
+        <h5 style="color:#EAE4CC;">Check the FAQ!</h5>
     </div>
 
     <div id="emailinput">
         <row>
         <div class="col-sm-6" style="float:left;">
-            <label for="exampleFormControlInput1" class="form-label" style="color:white;">First and Last name</label>
+            <label for="exampleFormControlInput1" class="form-label" style="color:#EEAF9D;">First and Last name</label>
             <input type="email" class="form-control" id="exampleFormControlInput1"
-                style="background-color:black;color:white;">
+                style="background-color:#182335;color:white;">
         </div>
         <div class="col-sm-1" style="float:left;"><h1> </h1></div>
         <div class="col-sm-5" style="float:left;">
-            <label for="exampleFormControlInput1" class="form-label" style="color:white;">Phone Number</label>
+            <label for="exampleFormControlInput1" class="form-label" style="color:#EEAF9D;">Phone Number</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" 
-                style="background-color:black;color:white;">
+                style="background-color:#182335;color:white;">
         </div>
     </row>
     <div class="col-sm-12" style="float:left; ">
@@ -107,19 +107,19 @@
 
     <row >
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label" style="color:white;">Email address</label>
+            <label for="exampleFormControlInput1" class="form-label" style="color:#EEAF9D;">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
-                style="background-color:black;color:white;">
+                style="background-color:#182335;color:white;">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label" style="color:white;">Body</label>
+            <label for="exampleFormControlTextarea1" class="form-label" style="color:#EEAF9D;">Body</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-                style="background-color: black;color:white; "></textarea>
+                style="background-color: #182335;color:white; "></textarea>
         </div>
     </div>
     <div style="text-align: center;"submit">
 
-    <button id="liveAlertBtn"  type="button" class="btn btn-dark" style="margin-left: 10%;margin-right: 10%;margin-top: 2%; background-color: black; border-style: solid;border-color: white;border-radius: 5px;">Send email</button>
+    <button id="liveAlertBtn"  type="button" class="btn btn-dark" style="margin-left: 10%;margin-right: 10%;margin-top: 2%; background-color: #182335; border-style: solid;border-color: #EEAF9D;border-radius: 5px; color:#EEAF9D;">Send email</button>
 </div>
 
 <div id="liveAlertPlaceholder"></div>
@@ -129,8 +129,7 @@ var alertTrigger = document.getElementById('liveAlertBtn')
 
 function alert(message, type) {
   var wrapper = document.createElement('div')
-
-  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #182335; margin-left:10%; margin-right:10%;margin-top:2%;text-align:center;color:#E15546;">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
 
   alertPlaceholder.append(wrapper)
 }
